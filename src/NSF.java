@@ -30,4 +30,12 @@ public class NSF {
     }
     public Collection<String> getPlayers() {
     }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public String getSport() {
+        return sport;
+    }
 }
