@@ -22,10 +22,16 @@ public class NSF {
     }
 
     public void listNSFPlayers() {
+        int count=0;
         System.out.print("NSF " + country + " " + sport + "'s players: ");
         for (Player player : players) {
-            System.out.print(player.getName() + ", ");
+            System.out.print(player.getFirstName() + " "+player.getLastName()+" ,");
+            if(players.size()-1==count){
+                System.out.print(player.getFirstName() + " "+player.getLastName());
+            }
         }
+            count++;
+
         System.out.println();
     }
     public Collection<String> getPlayers() {
