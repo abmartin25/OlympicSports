@@ -28,6 +28,7 @@ public class NSF {
         }
         System.out.println();
     }
-    public Collection<String> getPlayers() {
+    public Collection<? extends String> getPlayers() {
+        return players;
     }
 }
