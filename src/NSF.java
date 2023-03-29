@@ -21,15 +21,21 @@ public class NSF {
         players.add(player);
     }
 
-    public int countPlayers() {
-        return players.size();
-    }
-
     public void listNSFPlayers() {
         System.out.print("NSF " + country + " " + sport + "'s players: ");
         for (Player player : players) {
             System.out.print(player.getName() + ", ");
         }
         System.out.println();
+    }
+    public Collection<String> getPlayers() {
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public String getSport() {
+        return sport;
     }
 }
