@@ -4,16 +4,28 @@ import java.util.List;
 import java.util.Set;
 
 public class IOC {
-    private String continent;
+    private String name;
     private List<ISF> isfs;
 
-    public IOC(String continent) {
-        this.continent = continent;
+    public IOC(String name) {
+        this.name = name;
         this.isfs = new ArrayList<>();
     }
 
-    public void addISF(ISF isf) {
-        isfs.add(isf);
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public List<ISF> getISF() {
+        return isfs;
+    }
+
+    public void setISF(List<ISF> isfs) {
+        this.isfs = isfs;
     }
 
     public int countNSFs() {

@@ -1,5 +1,5 @@
 import java.util.List;
-
+//need tostring,
 public class Player {
 
     private String firstName;
@@ -16,12 +16,24 @@ public class Player {
     public String getFirstName() {
         return firstName;
     }
+
+    public void setNSFs(List<NSF> NSF){
+        this.nsfs=NSF;
+    }
+
+    public List<NSF> getNSFs(){
+        return nsfs;
+    }
     public void setFirstName(String name){
         this.firstName = name;
     }
 
     public String getLastName() {
         return lastName;
+    }
+
+    public void setLastName(String name){
+        this.lastName = name;
     }
 
 
@@ -36,6 +48,10 @@ public class Player {
         nsfs.add(nsf);
     }
 
+    public String toString() {
+        return firstName + " " + lastName;
+    }
+
 
     }
-}
+
