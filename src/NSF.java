@@ -3,9 +3,9 @@ import java.util.Collection;
 import java.util.List;
 
 public class NSF {
-    private String country;
-    private String sport;
-    private List<Player> players;
+    protected String country;
+    protected String sport;
+    protected List<Player> players;
 
     public NSF(String country, String sport) {
         this.country = country;

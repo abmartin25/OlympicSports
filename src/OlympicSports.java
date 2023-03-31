@@ -70,26 +70,26 @@ public class OlympicSports {
         isf2.addNSF(japanBaseball);
 
         // Step 5: Create an IOC that contains the 2 ISFs.
-        IOC ioc = new IOC();
+        IOC ioc = new IOC("International Olympic Committee");
         ioc.setISF(isfs);
 
 
         //f. Display the players for the NSFs.
+        System.out.println("Display the players for the NSFs");
         usaSoccer.listNSFPlayers();
-        System.out.println("\n");
         usaBasketball.listNSFPlayers();
-        System.out.println("\n");
         japanBaseball.listNSFPlayers();
-        System.out.println("\n");
         canadaHockey.listNSFPlayers();
-        System.out.println("\n");
         canadaSkiing.listNSFPlayers();
         System.out.println("\n");
         //g. For two players, display the NSFs they are in. Make sure at they are each registered for more
         //than one NSF.
+        System.out.println("For two players, display the NSFs they are in");
         System.out.println(player1.getNSFs());
         System.out.println(player2.getNSFs());
+        System.out.println("\n");
         //h. Display the total number of players registered with NSFs in each ISF, and in the IOC
+        System.out.println("Total number of players registered with NSFs");
         System.out.println("For ISFs:");
         System.out.println(isf1.countPlayersInNSFs());
         System.out.println(isf2.countPlayersInNSFs());
@@ -98,6 +98,7 @@ public class OlympicSports {
         System.out.println(ioc.countPlayersInISFNSFs());
         System.out.println("\n");
         //i. Display the total number of NSFs in each ISF and in the IOC.
+        System.out.println("Total number of NSFs");
         System.out.println("For ISFs:");
         System.out.println(isf1.countNSFs());
         System.out.println(isf2.countNSFs());

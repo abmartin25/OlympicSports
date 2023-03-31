@@ -8,8 +8,8 @@ public class IOC {
     private ArrayList<ISF> isfs;
 
 
-    public IOC() {
-        this.name = "International Olympic Committee";
+    public IOC(String n) {
+        this.name = n;
         isfs = new ArrayList<ISF>();
 
 
