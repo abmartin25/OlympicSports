@@ -1,14 +1,17 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class Player {
 
     private String firstName;
     private String lastName;
-    private List<NSF> nsfs;
+    List<NSF> nsfs = new ArrayList<NSF>();
+
 
     Player (String firstName, String lastName){
         this.firstName = firstName;
         this.lastName = lastName;
+
 
     }
 

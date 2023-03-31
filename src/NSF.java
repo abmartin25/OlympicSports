@@ -5,11 +5,12 @@ import java.util.List;
 public class NSF {
     private String country;
     private String sport;
-    private List<Player> players;
+    List<Player> players = new ArrayList<Player>();
 
     public NSF(String country, String sport) {
         this.country = country;
         this.sport = sport;
+
 
     }
     public String getCountry() {
@@ -37,7 +38,7 @@ public class NSF {
     }
 
     public void addPlayer(Player player) {
-        this.players.add(player);
+        players.add(player);
     }
 
     public String toString() {

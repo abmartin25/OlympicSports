@@ -5,10 +5,11 @@ import java.util.Set;
 
 public class IOC {
     private String name;
-    private List<ISF> isfs;
+    List<ISF> isfs = new ArrayList<ISF>();
 
     public IOC() {
         this.name = "International Olympic Committee";
+
 
     }
 

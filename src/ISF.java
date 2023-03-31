@@ -5,11 +5,12 @@ import java.util.Set;
 
 public class ISF extends IOC {
     private String name;
-    private List<NSF> nsfs;
+    List<NSF> nsfs = new ArrayList<NSF>();
 
     public ISF(String name) {
         super();
         this.name = name;
+
 
     }
 
