@@ -5,10 +5,12 @@ import java.util.Set;
 
 public class IOC {
     private String name;
-    List<ISF> isfs = new ArrayList<ISF>();
+    private ArrayList<ISF> isfs;
+
 
     public IOC() {
         this.name = "International Olympic Committee";
+        isfs = new ArrayList<ISF>();
 
 
     }
@@ -25,8 +27,8 @@ public class IOC {
         return isfs;
     }
 
-    public void setISF(List<ISF> isfs) {
-        this.isfs = isfs;
+    public void setISF(List<ISF> isf) {
+        this.isfs = new ArrayList<>(isf);
     }
 
     public int countNSFs() {

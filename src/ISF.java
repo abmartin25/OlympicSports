@@ -3,13 +3,13 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class ISF extends IOC {
+public class ISF {
     private String name;
-    List<NSF> nsfs = new ArrayList<NSF>();
+    private List<NSF> nsfs;
 
     public ISF(String name) {
-        super();
         this.name = name;
+        nsfs=new ArrayList<NSF>();
 
 
     }

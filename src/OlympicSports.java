@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class OlympicSports {
     public static void main(String[] args) {
         // Step 1: Create 5 NSFs and 15 players.
@@ -53,6 +55,10 @@ public class OlympicSports {
         // Step 4: Create 2 ISFs.
         ISF isf1 = new ISF("International Sports Federation 1");
         ISF isf2 = new ISF("International Sports Federation 2");
+        ArrayList<ISF>isfs=new ArrayList<ISF>();
+        isfs.add(isf1);
+        isfs.add(isf2);
+
 
         // The first ISF has 3 national sports federations.
         isf1.addNSF(usaBasketball);
@@ -65,16 +71,20 @@ public class OlympicSports {
 
         // Step 5: Create an IOC that contains the 2 ISFs.
         IOC ioc = new IOC();
-        ioc.setISF(isf1.getISF());
-        ioc.setISF(isf2.getISF());
+        ioc.setISF(isfs);
 
 
         //f. Display the players for the NSFs.
         usaSoccer.listNSFPlayers();
+        System.out.println("\n");
         usaBasketball.listNSFPlayers();
+        System.out.println("\n");
         japanBaseball.listNSFPlayers();
+        System.out.println("\n");
         canadaHockey.listNSFPlayers();
+        System.out.println("\n");
         canadaSkiing.listNSFPlayers();
+        System.out.println("\n");
         //g. For two players, display the NSFs they are in. Make sure at they are each registered for more
         //than one NSF.
         System.out.println(player1.getNSFs());
@@ -87,7 +97,7 @@ public class OlympicSports {
 
         System.out.println(ioc.countPlayersInISFNSFs());
         System.out.println("\n");
-        //i. Display the total number of NSFs in each ISF and and in the IOC.
+        //i. Display the total number of NSFs in each ISF and in the IOC.
         System.out.println("For ISFs:");
         System.out.println(isf1.countNSFs());
         System.out.println(isf2.countNSFs());

@@ -5,11 +5,12 @@ import java.util.List;
 public class NSF {
     private String country;
     private String sport;
-    List<Player> players = new ArrayList<Player>();
+    private List<Player> players;
 
     public NSF(String country, String sport) {
         this.country = country;
         this.sport = sport;
+        players = new ArrayList<Player>();
 
 
     }
@@ -49,9 +50,9 @@ public class NSF {
         System.out.print("NSF " + country + " " + sport + "'s players: ");
         for (int i = 0; i < players.size(); i++) {
             if (i == players.size() - 1) {
-                System.out.print(players.get(i).getFirstName() + players.get(i).getLastName());
+                System.out.print(players.get(i).getFirstName() + " " +players.get(i).getLastName());
             } else {
-                System.out.print(players.get(i).getFirstName() +  players.get(i).getLastName() + ", ");
+                System.out.print(players.get(i).getFirstName() + " " + players.get(i).getLastName() + ", ");
             }
         }
         System.out.println();
