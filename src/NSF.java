@@ -10,7 +10,7 @@ public class NSF {
     public NSF(String country, String sport) {
         this.country = country;
         this.sport = sport;
-        this.players = new ArrayList<>();
+
     }
     public String getCountry() {
         return country;

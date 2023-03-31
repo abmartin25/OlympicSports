@@ -7,9 +7,9 @@ public class IOC {
     private String name;
     private List<ISF> isfs;
 
-    public IOC(String name) {
-        this.name = name;
-        this.isfs = new ArrayList<>();
+    public IOC() {
+        this.name = "International Olympic Committee";
+
     }
 
     public String getName() {

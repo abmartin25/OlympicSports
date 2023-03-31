@@ -62,7 +62,7 @@ public class OlympicSports {
         isf2.addNSF(japanBaseball);
 
         // Step 5: Create an IOC that contains the 2 ISFs.
-        IOC ioc = new IOC("International Olympic Committee");
+        IOC ioc = new IOC();
 
 
 

@@ -1,5 +1,5 @@
 import java.util.List;
-//need tostring,
+
 public class Player {
 
     private String firstName;
@@ -9,7 +9,7 @@ public class Player {
     Player (String firstName, String lastName){
         this.firstName = firstName;
         this.lastName = lastName;
-        this.nsfs = null;
+
     }
 
 
